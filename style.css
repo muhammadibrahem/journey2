@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+}
+
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+.left {
+    flex: 1;
+    background: #557EFB;
+    color: white;
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left .logo {
+    width: 140px;
+    margin-bottom: 80px;
+}
+
+.left h2 {
+    font-size: 32px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.left p {
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+
+.center {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+
+.icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 12px;
+}
+
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+.mid {
+    width: 480px;
+    background: #ffffff;
+    padding: 30px 24px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.mid p {
+    font-size: 22px;
+    margin-bottom: 18px;
+    color: #333;
+}
+
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 10px;
+}
+
+.images div {
+    text-align: center;
+}
+
+.images span {
+    font-size: 11px;
+    color: #666;
+    font-weight: 600;
+    display: block;
+}
+
+.images img {
+    width: 46px;
+    height: 46px;
+    margin-top: 8px;
+}
+
+
+.submit-btn {
+    width: 480px;
+    height: 60px;
+    margin-top: 36px;
+    border-radius: 40px;
+    background: #557EFB;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.18s ease;
+    box-shadow: 0 6px 18px rgba(85, 126, 251, 0.22);
+}
+
+.submit-btn:hover {
+    background: #3a5ddb;
+}
+
+.bottom {
+    margin-top: 14px;
+    font-size: 16px;
+    color: #666;
+}
+
+.bottom .link {
+    color: #557EFB;
+    font-weight: 600;
+    margin-left: 6px;
+}
+
+
+
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left {
+        text-align: center;
+        align-items: center;
+    }
+
+    .mid,
+    .submit-btn {
+        width: 90%;
+    }
+
+    .icon {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+@media (max-width: 420px) {
+    .left h2 {
+        font-size: 22px;
+    }
+
+    .left p {
+        font-size: 14px;
+    }
+
+    .mid p {
+        font-size: 18px;
+    }
+
+    .submit-btn {
+        height: 52px;
+        font-size: 16px;
+    }
+}
+
+/* FIX: Prevent content overflow inside mid div on small screens */
+@media (max-width: 498px) {
+    .mid {
+        width: 100%;
+        padding: 24px 18px;
+    }
+
+    .images {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .images img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .bottom {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Also ensure safe layout down to 280px */
+@media (max-width: 320px) {
+    .mid p {
+        font-size: 18px;
+    }
+
+    .images span {
+        font-size: 10px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 280px) {
+    .mid {
+        padding: 18px 14px;
+    }
+
+    .images {
+        gap: 15px;
+    }
+
+    .submit-btn {
+        height: 50px;
+        font-size: 15px;
+    }
+}
