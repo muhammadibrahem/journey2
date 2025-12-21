@@ -5,39 +5,24 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-    background-color: #f4f7f9;
-}
 
-/* 1. Change body to white to fill the bottom area */
 body {
     background-color: #ffffff;
 }
 
-/* 2. Update main-content to ensure it fills the screen and stays white */
 .main-content {
     flex: 1;
     overflow-y: auto;
     padding: 0 30px;
     background-color: #ffffff;
-    /* This ensures the area under the button is white */
     display: flex;
     flex-direction: column;
 }
 
-/* 3. Adjust the Onboarding section so it doesn't try to fill the whole height */
-.onboarding {
-    text-align: center;
-    max-width: 500px;
-    margin: 0 auto;
-    padding-bottom: 100px;
-    /* This adds intentional breathing room below the button */
-}
 
-/* 4. Optional: Make the banner container stand out more since the background is now white */
+
 .guide-banner {
     background-color: #f8fafd;
-    /* Light blue/gray tint for the banner box only */
     border-radius: 15px;
     padding: 40px;
     display: flex;
@@ -95,7 +80,7 @@ body {
 }
 
 .nav-item:hover,
-.nav-item.active {
+.nav-item:active {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -269,6 +254,14 @@ body {
     box-shadow: 0 4px 10px rgba(93, 135, 255, 0.3);
 }
 
+.onboarding {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+
+}
+
 /* Responsive Breakpoints */
 
 /* Tablets and Small Desktops (under 1024px) */
@@ -309,7 +302,7 @@ body {
     }
 
     .nav-menu {
-        display: none;
+        /* display: none; */
         /* Hide menu on mobile by default */
     }
 
