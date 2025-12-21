@@ -3,68 +3,86 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>JourneyBinder</title>
+        <title>JourneyBinder - Guide Management</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
     <body>
-        <div class="container">
-            <div class="left">
-                <img src="images/White.png" alt="Logo" class="logo">
-                <h2>
-                    Define what each
-                    <br>
-                    journey will mean
-                    <br>
-                    for you.
-                </h2>
-                <p>
-                    At JourneyBinder,
-we clarify each
-                    <br>
-                    journey based on how it affects
-                    <br>
-                    you in four categories:
-                    <br>
-                    Spirituality,
-health,
-education,
-                    <br>
-                    and finance.
-                </p>
-            </div>
-            <div class="center">
-                <img src="images/journey-icon.png" alt="Journey Icon" class="icon">
-                <div class="title">
-                    Compartmentalize
-                    <img src="images/circle question mark.png">
+        <div class="dashboard-container">
+            <aside class="sidebar">
+                <div class="logo">
+                    <img src="images/White.png" width="96px" alt="JourneyBinder Logo">
+                    <i class="fa-solid fa-angles-left collapse-icon"></i>
                 </div>
-                <div class="mid">
-                    <p>Have a family trip to Disneyland</p>
-                    <div class="images">
-                        <div>
-                            <span>SPIRITUAL</span>
-                            <img src="images/spiritual-icon-circle.png" alt="Spiritual">
+                <nav class="nav-menu">
+                    <div class="nav-item">
+                        <img src="images/Content.png" alt="">
+                    </div>
+                    <button class="create-focus-btn">
+                        <i class="fa-solid fa-plus"></i>
+                        Create Focus
+                    </button>
+                    <div class="nav-item">
+                        <i class="fa-solid fa-link"></i>
+                        <span>My Connections</span>
+                    </div>
+                    <div class="nav-item active">
+                        <img src="images/1.png" alt="">
+                    </div>
+                </nav>
+            </aside>
+            <main class="main-content">
+                <header class="top-header">
+                    <div class="quote">
+                        <i class="fa-solid fa-quote-left"></i>
+                        Do the best that you can until you can do better. - Savalas Colbert
+                    </div>
+                    <div class="header-actions">
+                        <button class="btn-outline">
+                            <i class="fa-solid fa-video"></i>
+                            Launch Sessions
+                        </button>
+                        <button class="btn-primary">Book A Session</button>
+                        <div class="notification">
+                            <i class="fa-regular fa-bell"></i>
                         </div>
-                        <div>
-                            <span>HEALTH</span>
-                            <img src="images/health-icon-circle.png" alt="Health">
-                        </div>
-                        <div>
-                            <span>EDUCATION</span>
-                            <img src="images/education-icon-circle.png" alt="Education">
-                        </div>
-                        <div>
-                            <span>FINANCE</span>
-                            <img src="images/finance-icon-circle.png" alt="Finance">
+                        <div class="user-profile">
+                            <img
+                                src="images/savalas.png"
+                                width="24px"
+                                height="24px"
+                                alt="User"
+                            >
+                            <span>Savalas</span>
+                            <i class="fa-solid fa-chevron-down"></i>
                         </div>
                     </div>
-                </div>
-                <button class="submit-btn">Next</button>
-                <div class="bottom">
-                    Need help? Start your
-                    <a href="#" class="link">free trainer session</a>
-                </div>
-            </div>
+                </header>
+                <section class="guide-banner">
+                    <div class="banner-text">
+                        <h1>Guide Management</h1>
+                        <p>Take control of how you would like to be presented to the world.</p>
+                        <div class="banner-btns">
+                            <button class="video-tutorial-btn">
+                                <i class="fa-regular fa-circle-play"></i>
+                                See Video Tutorials
+                            </button>
+                            <a href="#" class="bank-link">Link to Bank Account</a>
+                        </div>
+                    </div>
+                    <div class="banner-illustration">
+                        <img src="images/session.png" alt="Illustration">
+                    </div>
+                </section>
+                <section class="onboarding">
+                    <h2>Hi, Savalas, Let's Get Started</h2>
+                    <p>Enter your SESSIONS profile name. This will be permanent, so please choose your name wisely.</p>
+                    <div class="input-group">
+                        <input type="text" placeholder="Enter your profile name">
+                        <button class="apply-btn">Apply</button>
+                    </div>
+                </section>
+            </main>
         </div>
     </body>
 </html>
