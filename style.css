@@ -10,30 +10,8 @@ body {
     background-color: #ffffff;
 }
 
-.main-content {
-    flex: 1;
-    overflow-y: auto;
-    padding: 0 30px;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-}
 
-
-
-.guide-banner {
-    background-color: #f8fafd;
-    border-radius: 15px;
-    padding: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
-    margin-bottom: 50px;
-    margin-top: 20px;
-}
-
-.dashboard-container {
+.main-container {
     display: flex;
     height: 100vh;
 }
@@ -41,7 +19,7 @@ body {
 /* Sidebar */
 .sidebar {
     width: 240px;
-    background-color: #5d87ff;
+    background-color: #557EFB;
     color: white;
     padding: 20px 0;
     display: flex;
@@ -89,26 +67,30 @@ body {
     border-left: 4px solid white;
 }
 
-.create-focus-btn {
+.focus-btn {
     margin: 15px 20px;
     padding: 10px;
     border-radius: 5px;
     border: none;
     background: white;
-    color: #5d87ff;
+    color: #557EFB;
     font-weight: bold;
     cursor: pointer;
 }
 
 /* Main Content Area */
-.main-content {
+
+.text-container {
     flex: 1;
     overflow-y: auto;
     padding: 0 30px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header */
-.top-header {
+.header {
     height: 70px;
     display: flex;
     justify-content: space-between;
@@ -119,21 +101,21 @@ body {
     padding-top: 20px;
 }
 
-.quote {
+.text {
     color: #666;
     font-size: 0.85rem;
     font-style: italic;
 }
 
-.header-actions {
+.header-btns {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
 .btn-outline {
-    border: 1px solid #5d87ff;
-    color: #5d87ff;
+    border: 1px solid #557EFB;
+    color: #557EFB;
     background: transparent;
     padding: 8px 15px;
     border-radius: 5px;
@@ -141,7 +123,7 @@ body {
 }
 
 .btn-primary {
-    background-color: #5d87ff;
+    background-color: #557EFB;
     color: white;
     border: none;
     padding: 9px 18px;
@@ -149,92 +131,97 @@ body {
     cursor: pointer;
 }
 
-.user-profile {
+.profile-image {
     display: flex;
     align-items: center;
     gap: 10px;
     cursor: pointer;
 }
 
-.user-profile img {
+.profile-image img {
     border-radius: 50%;
 }
 
 /* Banner */
-.guide-banner {
-    background-color: #fff;
+
+
+
+.guide-container {
+    background-color: #f8fafd;
     border-radius: 15px;
     padding: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
     margin-bottom: 50px;
+    margin-top: 20px;
 }
 
-.banner-text h1 {
+.guide-text h1 {
     font-size: 1.8rem;
     color: #333;
     margin-bottom: 10px;
 }
 
-.banner-text p {
+.guide-text p {
     color: #777;
     margin-bottom: 20px;
 }
 
-.banner-btns {
+.btns {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.video-tutorial-btn {
-    border: 1px solid #5d87ff;
-    color: #5d87ff;
+.video-btn {
+    border: 1px solid #557EFB;
+    color: #557EFB;
     background: white;
     padding: 8px 15px;
     border-radius: 20px;
     cursor: pointer;
 }
 
-.bank-link {
-    color: #5d87ff;
+.link {
+    color: #557EFB;
     font-size: 0.8rem;
     text-decoration: none;
 }
 
-.banner-illustration img {
+.image-container img {
     max-width: 350px;
     height: auto;
 }
 
-/* Onboarding Section */
-.onboarding {
+/* Info Container Section */
+.info-conatiner {
     text-align: center;
     max-width: 500px;
     margin: 0 auto;
+    padding-bottom: 100px;
 }
 
-.onboarding h2 {
+.info-conatiner h2 {
     color: #444;
     margin-bottom: 15px;
 }
 
-.onboarding p {
+.info-conatiner p {
     color: #777;
     font-size: 0.9rem;
     margin-bottom: 30px;
     line-height: 1.5;
 }
 
-.input-group {
+.input {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.input-group input {
+.input input {
     width: 100%;
     padding: 15px;
     border: 1px solid #e0e0e0;
@@ -244,7 +231,7 @@ body {
 }
 
 .apply-btn {
-    background-color: #5d87ff;
+    background-color: #557EFB;
     color: white;
     border: none;
     padding: 12px;
@@ -254,30 +241,23 @@ body {
     box-shadow: 0 4px 10px rgba(93, 135, 255, 0.3);
 }
 
-.onboarding {
-    text-align: center;
-    max-width: 500px;
-    margin: 0 auto;
-    padding-bottom: 100px;
-
-}
 
 /* Responsive Breakpoints */
 
 /* Tablets and Small Desktops (under 1024px) */
 @media (max-width: 1024px) {
-    .guide-banner {
+    .guide-container {
         flex-direction: column;
         text-align: center;
         padding: 20px;
     }
 
-    .banner-illustration img {
+    .image-container img {
         max-width: 250px;
         margin-top: 20px;
     }
 
-    .banner-btns {
+    .btns {
         justify-content: center;
     }
 }
@@ -286,9 +266,9 @@ body {
 
 /* Mobile Devices (under 768px) */
 @media (max-width: 768px) {
-    .dashboard-container {
+    .main-container {
         flex-direction: column;
-       
+
     }
 
     .sidebar {
@@ -306,19 +286,19 @@ body {
         /* Hide menu on mobile by default */
     }
 
-    .top-header {
+    .header {
         flex-direction: column;
         height: auto;
         padding: 15px 0;
         gap: 10px;
     }
 
-    .quote {
+    .text {
         display: none;
         /* Hide quote to save space on mobile */
     }
 
-    .header-actions {
+    .header-btns {
         width: 100%;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -328,7 +308,7 @@ body {
 
 /* Very Small Screens (300px to 480px) */
 @media (max-width: 480px) {
-    .main-content {
+    .text-container {
         padding: 0 15px;
     }
 
@@ -338,25 +318,25 @@ body {
         padding: 6px 10px;
     }
 
-    .user-profile span {
+    .profile-image span {
         display: none;
         /* Hide name, keep only avatar */
     }
 
-    .banner-text h1 {
+    .guide-text h1 {
         font-size: 1.4rem;
     }
 
-    .onboarding h2 {
+    .info-conatiner h2 {
         font-size: 1.2rem;
     }
 
-    .input-group input {
+    .input input {
         font-size: 0.9rem;
         padding: 12px;
     }
 
-    .banner-btns {
+    .btns {
         flex-direction: column;
         gap: 10px;
     }
