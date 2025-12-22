@@ -288,7 +288,7 @@ body {
 @media (max-width: 768px) {
     .dashboard-container {
         flex-direction: column;
-        /* Stack sidebar on top or hide it */
+       
     }
 
     .sidebar {
@@ -302,7 +302,7 @@ body {
     }
 
     .nav-menu {
-        /* display: none; */
+        display: none;
         /* Hide menu on mobile by default */
     }
 
