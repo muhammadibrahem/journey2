@@ -241,6 +241,10 @@ body {
     box-shadow: 0 4px 10px rgba(93, 135, 255, 0.3);
 }
 
+.apply-btn:hover {
+    background-color: #3a5ddbe1;
+}
+
 
 /* Responsive Breakpoints */
 
